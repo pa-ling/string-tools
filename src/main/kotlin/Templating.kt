@@ -3,6 +3,7 @@ package com.paling
 import freemarker.cache.*
 import io.ktor.server.application.*
 import io.ktor.server.freemarker.*
+import io.ktor.server.http.content.staticResources
 import io.ktor.server.plugins.calllogging.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
@@ -14,7 +15,8 @@ fun Application.configureTemplating() {
         templateLoader = ClassTemplateLoader(this::class.java.classLoader, "templates")
     }
     routing {
-        get("/html-freemarker") {
+        staticResources("/assets", "templates/components/assets")
+        get("/") {
             call.respond(FreeMarkerContent("index.ftl", mapOf("data" to IndexData(listOf(1, 2, 3))), ""))
         }
     }

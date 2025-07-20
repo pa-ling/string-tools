@@ -1,9 +1,8 @@
-<html>
+<html lang="en-US">
+<#include "components/head.ftl">
 <body>
-<h1>Items:</h1>
-<#list data.items as item>
-    <h2>The item at index ${item?index} is ${item}</h2>
-</#list>
+<#include "components/navbar.ftl">
+TODO
+<#include "components/footer.ftl">
 </body>
 </html>
-
