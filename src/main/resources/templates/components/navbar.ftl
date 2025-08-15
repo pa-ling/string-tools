@@ -12,7 +12,7 @@
                     <a class="nav-link"
                        href="https://github.com/pa-ling/string-tools"
                        target="_blank">
-                        <img src="assets/img/github_logo.png" alt="Logo" width="22" height="22"
+                        <img src="assets/img/github-mark.png" alt="Logo" width="22" height="22"
                              class="d-inline-block align-text-top">
                         Github
                     </a>
